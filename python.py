@@ -194,7 +194,7 @@ a={1,2,3}
 b={1,2,3,4}
 print(id(a))
 print(id(b))
-print(a is not b)'''
+print(a is not b)
 
 
 
@@ -206,4 +206,72 @@ weight=float(input("enter weight:"))
 
 print("name :",name)
 print("age :",age)
-print("weight :",weight)
+print("weight :",weight)'''
+
+
+    #if-else statement
+
+#if condition:
+   #statement
+#else:
+   #statement 
+
+
+'''if 10==10:
+    print('equal')
+else:
+    print('not equal')
+
+if 10==11:
+    print('equal')
+else:
+    print('not equal')
+
+
+
+a=(input("enter a number:"))
+b=(input("enter another number:"))
+if a==b:
+    print('equal')
+else:
+    print('not equal')
+
+
+a=(input("enter a number:"))
+b=(input("enter another number:"))
+if a>b:
+    print('a is largest')
+else:
+    print('b is largest')'''
+
+
+
+'''a=int(input("enter the salary:"))
+b=int(input("year of experience:"))
+if b>=5:
+    print(a*0.05)
+else:
+    print("no bonus available")
+
+
+a=int(input("enter the salary:"))
+b=int(input("year of experience:"))
+if b>=5:
+    print(a*0.05)
+else:
+    print(a*0.03)'''
+
+
+a=int(input("enter a number:"))
+d=a%10
+if d%3==0:
+    print("number is divisible by 3")
+else:
+    print("not divisible")
+
+
+
+
+
+
+
