@@ -262,12 +262,107 @@ else:
     print(a*0.03)'''
 
 
-a=int(input("enter a number:"))
+'''a=int(input("enter a number:"))
 d=a%10
 if d%3==0:
     print("number is divisible by 3")
 else:
-    print("not divisible")
+    print("not divisible")'''
+
+
+    #if-else-if ladder
+
+'''if cond:
+    stm
+elif cond:
+    stm
+else:
+    stm'''
+
+'''a=10
+b=11
+if a==b:
+    print('equal')
+elif a>b:
+    print(a)
+else:
+    print(b)'''
+
+    #nextelif
+
+'''if cond:
+        if cond:
+            stm
+        else:
+            stm
+else:
+    stm'''
+
+
+'''name=(input("enter name :"))
+age=int(input("enter age:"))
+weight=float(input("enter weight:"))
+
+print("name :",name)
+print("age :",age)
+print("weight :",weight)'''
+
+
+'''a=int(input("enter a number: "))
+if a==1:
+    print("sunday")
+elif a==2:
+    print("monday")
+elif a==3:
+    print("tuesday")
+elif a==4:
+    print("wednesday")
+elif a==5:
+    print("thursday")
+elif a==6:
+    print("friday")
+elif a==7:
+    print("saturday")
+else:
+    print("invalid section")'''
+
+
+
+'''a=(input("enter the city name :"))
+if a=="Delhi":
+    print("Red Fort")
+elif a=="Agra":
+    print("Tal Mahal")
+elif a=="Jaipur":
+    print("Jal Mahal")
+else:
+    print("invalid")'''
+
+
+'''a=int(input("enter the cost of the bike:"))
+if a>100000:
+    print(a*0.15)
+elif a>50000 and a<=100000:
+    print(a*0.10)
+else:
+    print(a*0.05)'''
+
+
+
+a=int(input("enter the unit:"))
+if a<=100:
+    print("no charges")
+elif a>100 and a<=200:
+    print((a-100)*5)
+elif a>100 and a<=400:
+    print((a-150)*10)
+else:
+    print("invalid")
+
+
+
+
+
 
 
 
