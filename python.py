@@ -349,15 +349,70 @@ else:
 
 
 
-a=int(input("enter the unit:"))
+'''a=int(input("enter the unit:"))
 if a<=100:
     print("no charges")
 elif a>100 and a<=200:
     print((a-100)*5)
-elif a>100 and a<=400:
-    print((a-150)*10)
+elif a>=200:
+    print((a-200)*10+500)
 else:
-    print("invalid")
+    print("invalid")'''
+
+#while condition:
+    #statement
+    #incremet/decrement
+
+
+
+'''i=1
+while i<=10:
+    print(i)
+    i+=1'''
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+
+while a<=b:
+    print(a)
+    a+=1'''
+
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+c=0
+while a<=b:
+    c+=a
+    a+=1
+print(c)'''
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+while a<=b:
+    if a%2!=0:
+        print(a)
+    a+=1'''
+
+
+
+
+a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+c=0
+while a<=b:
+    if a%2!=0:
+        c+=a
+    a+=1
+print(c)
+
+
+
+
+
+
 
 
 
