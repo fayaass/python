@@ -399,17 +399,53 @@ while a<=b:
 
 
 
-a=int(input("enter the first number :"))
+'''a=int(input("enter the first number :"))
 b=int(input("enter the second number :"))
 c=0
 while a<=b:
     if a%2!=0:
         c+=a
     a+=1
-print(c)
+print(c)'''
 
 
 
+'''i=1
+a=int(input("enter a number :"))
+while i<=10:
+    print(i,"*",a,"=",a*i)
+    i+=1'''
+
+
+
+'''i=1
+a=int(input("enter a number :"))
+s=1
+while i<=a:
+      s*=i
+      i+=1
+print(s)
+'''
+
+
+'''a=int(input("enter a number :"))
+rev=0
+while a>0:
+    d=a%10
+    rev=rev*10+d
+    a//=10
+print(rev)
+
+'''
+
+
+a=int(input("enter a word :"))
+rev=0
+while a>0:
+    d=a%10
+    rev=rev*10+d
+    a//=10
+print(rev)
 
 
 
