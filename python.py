@@ -364,10 +364,13 @@ else:
     #incremet/decrement
 
 
+                            #while loop
+
+
 
 '''i=1
 while i<=10:
-    print(i)
+    print(i)                            #print 1-10
     i+=1'''
 
 
@@ -375,7 +378,7 @@ while i<=10:
 b=int(input("enter the second number :"))
 
 while a<=b:
-    print(a)
+    print(a)                            #print a-b
     a+=1'''
 
 
@@ -384,7 +387,7 @@ while a<=b:
 b=int(input("enter the second number :"))
 c=0
 while a<=b:
-    c+=a
+    c+=a                                #sum of a-b
     a+=1
 print(c)'''
 
@@ -392,7 +395,7 @@ print(c)'''
 '''a=int(input("enter the first number :"))
 b=int(input("enter the second number :"))
 while a<=b:
-    if a%2!=0:
+    if a%2!=0:                          #odd numbers
         print(a)
     a+=1'''
 
@@ -402,8 +405,8 @@ while a<=b:
 '''a=int(input("enter the first number :"))
 b=int(input("enter the second number :"))
 c=0
-while a<=b:
-    if a%2!=0:
+while a<=b:                             
+    if a%2!=0:                          #sum of odd numbers
         c+=a
     a+=1
 print(c)'''
@@ -412,7 +415,7 @@ print(c)'''
 
 '''i=1
 a=int(input("enter a number :"))
-while i<=10:
+while i<=10:                            #multiplication
     print(i,"*",a,"=",a*i)
     i+=1'''
 
@@ -422,7 +425,7 @@ while i<=10:
 a=int(input("enter a number :"))
 s=1
 while i<=a:
-      s*=i
+      s*=i                              #factorial
       i+=1
 print(s)
 '''
@@ -432,30 +435,81 @@ print(s)
 rev=0
 while a>0:
     d=a%10
-    rev=rev*10+d
+    rev=rev*10+d                        #reverse of a number
     a//=10
 print(rev)
 
 '''
 
 
-a=int(input("enter a word :"))
-rev=0
-while a>0:
-    d=a%10
-    rev=rev*10+d
-    a//=10
-print(rev)
+'''a=(input("enter a string :"))
+rev=""
+i=0
+l=len(a)
+while i<l:                              #reverse of a string
+    #print(a[i])
+    rev=a[i]+rev
+    i+=1
+print(rev)'''
 
 
 
 
+                            #for loop
+
+    
+#range(limit)
+'''for i in range(10):
+    print(i)'''
+
+
+#range(start,end)
+'''for i in range(2,11):
+    print(i)'''
+
+
+
+#range(start,end,updation)
+'''for i in range(2,11,2):
+    print(i)'''
+
+
+'''a="python"
+for i in a:
+    print(i)'''
+
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+s=0
+for i in range(a,b+1):                          #sum of a-b in forloop
+    s+=i
+print(s)'''
+
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+for i in range(a,b+1):
+    if i%2!=0:                                  #odd numbers using forloop
+        print(i)'''
+
+
+'''a=int(input("enter the first number :"))
+b=int(input("enter the second number :"))
+s=0
+for i in range(a,b+1):                          
+    if i%2!=0:                                  #sum of odd numbers using for loop
+        s+=i
+print(s)'''
 
 
 
 
-
-
+a=int(input("enter a number:"))
+for i in range(1,11):                           #multiplication using for loop
+    print(i,"*",a,"=",a*i)
 
 
 
