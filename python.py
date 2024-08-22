@@ -437,9 +437,9 @@ while a>0:
     d=a%10
     rev=rev*10+d                        #reverse of a number
     a//=10
-print(rev)
+print(rev)'''
 
-'''
+
 
 
 '''a=(input("enter a string :"))
@@ -488,7 +488,6 @@ for i in range(a,b+1):                          #sum of a-b in forloop
 print(s)'''
 
 
-
 '''a=int(input("enter the first number :"))
 b=int(input("enter the second number :"))
 for i in range(a,b+1):
@@ -507,11 +506,72 @@ print(s)'''
 
 
 
-a=int(input("enter a number:"))
+'''a=int(input("enter a number:"))
 for i in range(1,11):                           #multiplication using for loop
-    print(i,"*",a,"=",a*i)
+    print(i,"*",a,"=",a*i)'''
 
 
 
+'''a=int(input("enter a number:"))
+s=1
+for i in range(1,a+1):                          #factorial using for loop
+      s*=i
+print(s)'''
 
 
+
+'''a=(input("enter a string:"))
+rev=""
+for i in a:                                    #reverse of a string using for loop  
+    rev=i+rev
+print(rev)
+'''
+
+                #loop statements
+
+
+#break
+
+'''for i in range(10):
+    print(i)
+    if i==5:
+        break
+'''
+
+#continue
+
+'''for i in range(10):
+    if i==5:
+        print("it's value 5")
+        continue
+    print(i)'''
+
+
+#pass
+
+'''for i in range(10):
+    pass
+'''
+
+
+'''a=int(input("enter a number:"))
+rev=0
+for i in range(a):
+    d=a%10
+    rev=rev*10+d
+    a//=10
+    if a==0:
+        break
+print(rev)'''
+
+
+
+'''a=(input("enter a word :"))
+for i in (a):
+    if i%2==0:  
+     print(i)
+
+'''
+
+
+a=(input("enter a word :"))
