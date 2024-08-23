@@ -574,4 +574,114 @@ for i in (a):
 '''
 
 
-a=(input("enter a word :"))
+'''a=(input("enter a word :"))'''
+
+
+
+
+
+                #LIST
+
+'''l=[1,2,10,20,'abc',1]'''
+'''print(l[0])
+print(l[1])'''
+
+
+'''if 10 in l:
+    print('available')
+else:
+    print('not available')'''
+
+
+'''for i in l:
+    print(i)'''
+
+
+'''l[0]=11
+print(l)'''
+
+
+#                 #list methods
+
+# #1.append()
+# #2.extend
+# #3.insert
+
+#     #append
+
+# l=[]
+
+# l.append(10)
+# print(l)
+
+# l.append('abc')
+# print(l)
+
+# l.append([10,11,12])
+# print(l)
+
+# if 12 in l:
+#     print('available')
+# else:
+#     print('not available')
+
+#     #extend
+
+# l.extend([100,200,300])
+# print(l)
+
+#        #insert
+
+# l.insert(2,'hello')
+# print(l)
+
+
+            #delete methods
+
+#1.clear
+#2.pop 1.pop() 2.pop(index)
+#3.remove
+
+l=[10,20,30]
+
+    #clear
+
+# l.clear()
+# print(l)
+
+    #pop
+
+# l.pop()
+# print(l)
+
+# l.pop(1)
+# print(l)
+
+
+    #remove
+
+# l.remove(10)
+# print(l)
+
+
+l=[10,10,20,30,8,5]
+
+# print(l.index(20))
+# print(l)
+
+# print(l.count(30))
+# print(l)
+
+l.sort()
+# print(l)
+
+l.reverse()
+print(l)
+
+
+
+
+
+
+
+
