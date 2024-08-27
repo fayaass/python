@@ -729,7 +729,99 @@ else:
 
 
 
-l=[10,1,2,3,5,8,6,1,3,8]
+#checking palindrome
+
+# l=['malayalam','apple','amma','python']
+# for i in l:
+#     rev=i[::-1]
+#     if rev==i:
+#         print(rev,'its palindrome')
+#     else:
+#         print(rev,'its not palindrome')
+
+
+# list of numbers divisible by 3
+
+# l=[1,2,5,8,9,3,12]
+# for i in l:
+#     if i%3==0:
+#         print(i,'divisible')
+#     else:
+#         print(i,'not divisible')
+
+
+
+# <----------choice------------>
+
+# while True:
+#     print('''
+# 1.add
+# 2.sub
+# 3.mul
+# 4.div
+# 5.exit
+#           ''')
+    
+#     choice=int(input("enter your choice :"))
+#     if choice==1:
+#         a=int(input("enter first no :"))
+#         b=int(input("enter second no :"))
+#         c=a+b
+#         print(c)
+#     elif choice==2:
+#         a=int(input("enter first no :"))
+#         b=int(input("enter second no :"))
+#         c=a-b
+#         print(c)
+#     elif choice==3:
+#         a=int(input("enter first no :"))
+#         b=int(input("enter second no :"))
+#         c=a*b
+#         print(c)
+#     elif choice==4:
+#         a=int(input("enter first no :"))
+#         b=int(input("enter second no"))
+#         c=a/b
+#         print(c)
+#     elif choice==5:
+#         break
+#     else:
+#         print("invalid choice")
+
+
+std=[['sha',20,100,],['mj',20,90]]
+while True:
+ print('''
+1.student details
+2.view std details
+3.upadte std details
+4.delete std details
+5.exit
+          ''')
+ 
+ choice=int(input("enter your choice :"))
+ if choice==1:
+         name=str(input("enter name :"))
+         age=int(input("enter age :"))
+         mark=int(input("enter mark :"))
+         std.append([name,age,mark])
+ elif choice==2:
+      for i in std:
+           print(i)
+ elif choice==3:
+      name=str(input("enter name :"))
+      f=0
+      for i in std:
+           if name in i:
+             mark=int(input("enter mark :"))
+             i[2]=mark
+             f==1
+           if f==0:
+               print('invalid name')
+ elif choice==5:
+     break
+ else:
+     print('invalid choice')
 
 
 
