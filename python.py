@@ -789,43 +789,134 @@ else:
 #         print("invalid choice")
 
 
-std=[['sha',20,100,],['mj',20,90]]
+#----------------------------------------------------------------------------------
+
+#student details
+
+# std=[['a',20,50],['b',20,50],['c',20,50],['d',20,50]]
+# while True:
+#  print('''
+# 1.student details
+# 2.view std details
+# 3.upadte std details
+# 4.delete std details
+# 5.exit
+#           ''')
+ 
+#  choice=int(input("enter your choice :"))
+#  if choice==1:
+#          name=str(input("enter name :"))
+#          age=int(input("enter age :"))
+#          mark=int(input("enter mark :"))
+#          std.append([name,age,mark])
+#  elif choice==2:
+#       for i in std:
+#            print(i)
+#  elif choice==3:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in std:
+#            if name in i:
+#              mark=int(input("enter mark :"))
+#              i[2]=mark
+#              f=1
+#       if f==0:
+#                print('invalid name')
+#  elif choice==4:
+#       name=str(input("enter name :"))
+#       f=0
+#       for i in std:
+#            if name in i:
+#              std.remove(i)
+#              f=1
+#       if f==0:
+#                print('invalid name')
+#  elif choice==5:
+#      break
+#  else:
+#      print('invalid choice')
+
+
+#------------------------------------------------------------------------------------
+
+#employee details
+
+emp=[['fayas',203,24,'Delhi',75000,'manager',4],['yaseen',204,24,'Delhi',20000,'security',10]]
 while True:
  print('''
-1.student details
-2.view std details
-3.upadte std details
-4.delete std details
-5.exit
-          ''')
- 
- choice=int(input("enter your choice :"))
+1.register
+2.view
+3.update
+4.delete
+5.add work
+6.search
+7.exit
+ ''')
+ choice=int(input('enter the choice :'))
  if choice==1:
-         name=str(input("enter name :"))
-         age=int(input("enter age :"))
-         mark=int(input("enter mark :"))
-         std.append([name,age,mark])
- elif choice==2:
-      for i in std:
-           print(i)
- elif choice==3:
-      name=str(input("enter name :"))
-      f=0
-      for i in std:
-           if name in i:
-             mark=int(input("enter mark :"))
-             i[2]=mark
-             f==1
-           if f==0:
-               print('invalid name')
+    name=str(input('enter name :'))
+    id=int(input('enter id :'))
+    age=int(input('enter age :'))
+    place=str(input('enter place :'))
+    salary=int(input('enter salary :'))
+    position=str(input('enter position :'))
+    experience=int(input('enter experience :'))
+    emp.append([name,id,age,place,salary,position,experience])
+
+ if choice==2:
+    for i in emp:
+        print(i)
+
+ if choice==3:
+    name=str(input('enter name :'))
+    f=0
+    for i in emp:
+        if name in i:
+            choice=int(input('enter the choice :'))
+            if choice==1:
+                age=int(input('enter age :'))
+                i[2]=age
+            elif choice==2:
+                place=str(input('enter place :'))
+                i[3]=place
+            elif choice==3:
+                salary=int(input('enter salary :'))
+                i[4]=salary
+            elif choice==4:
+                position=str(input('enter position :'))
+                i[5]=position
+            elif choice==5:
+                experience=int(input('enter experience :'))
+                i[6]=experience
+                f=1
+        if f==0:
+                print('invalid name')
+
+ if choice==4:
+    name=str(input('enter name :'))
+    f=0
+    for i in emp:
+        if name in i :
+            emp.remove(i)
+            f=1
+    if f==0:
+            print('invalid name')
+
+ if choice==4:
+    name=str(input('enter name :'))
+    f=0
+    for i in emp:
+        if name in i :
+            emp.search(i)
+            f=1
+    if f==0:
+            print('invalid name')
+
  elif choice==5:
      break
+ 
  else:
      print('invalid choice')
-
-
-
-
 
 
 
