@@ -842,6 +842,7 @@ else:
 #employee details
 
 emp=[['fayas',203,24,'Delhi',75000,'manager',4],['yaseen',204,24,'Delhi',20000,'security',10]]
+import datetime
 while True:
  print('''
 1.register
@@ -863,19 +864,21 @@ while True:
     experience=int(input('enter experience :'))
     emp.append([name,id,age,place,salary,position,experience])
 
- if choice==2:
+
+ elif choice==2:
     for i in emp:
         print(i)
 
- if choice==3:
+
+ elif choice==3:
     name=str(input('enter name :'))
     f=0
     for i in emp:
-        if name in i:
+        if name in i:                                                                            
             choice=int(input('enter the choice :'))
             if choice==1:
                 age=int(input('enter age :'))
-                i[2]=age
+                i[2]=age                                                                      
             elif choice==2:
                 place=str(input('enter place :'))
                 i[3]=place
@@ -888,11 +891,12 @@ while True:
             elif choice==5:
                 experience=int(input('enter experience :'))
                 i[6]=experience
-                f=1
+            f=1
         if f==0:
                 print('invalid name')
 
- if choice==4:
+
+ elif choice==4:
     name=str(input('enter name :'))
     f=0
     for i in emp:
@@ -902,19 +906,32 @@ while True:
     if f==0:
             print('invalid name')
 
- if choice==4:
+
+ elif choice==5:
+     id=int(input('enter an id :'))
+     for i in emp:
+         if id in i:
+             task=input('enter the task :')
+             date=datetime.datetime.now().strftime('%x')
+             i.append([task,date])
+             print(emp)
+     
+
+ elif choice==6:
     name=str(input('enter name :'))
     f=0
     for i in emp:
         if name in i :
-            emp.search(i)
+            print(i)
             f=1
     if f==0:
             print('invalid name')
 
- elif choice==5:
+
+ elif choice==6:
      break
  
+
  else:
      print('invalid choice')
 
