@@ -971,13 +971,91 @@ else:
 
 #find the position of the values
 
-t=(1,2,3,4,1,2,3,5,3,6)
-a=int(input("enter a value :"))
-c=t.count(a)
-print(c)
-pos=0
-while c>0:
-    p=t.index(a,pos)
-    pos=p+1
-    print('index:',p)
-    c-=1
+# t=(1,2,3,4,1,2,3,5,3,6)
+# a=int(input("enter a value :"))
+# c=t.count(a)
+# print(c)
+# pos=0
+# while c>0:
+#     p=t.index(a,pos)
+#     pos=p+1
+#     print('index:',p)
+#     c-=1
+
+
+
+#dictionary
+
+
+d={'name':'fayas','age':22,'place':'kottayam'}
+# print(d)
+# print(d['name'])
+# print(d['age'])
+# print(d['place'])
+
+# for i in d:
+#     print(i,d[i])
+
+# d['age']=23
+# print(d)
+
+# d['mark']=50
+# print(d)
+
+
+# for i in d:
+#     print(i,d[i])
+
+
+# if d['age']==22:
+#     print('available')
+# else:
+#     print('not available')
+
+# print(d.get('name'))
+
+# print(d.items())
+
+# print(d.values())
+
+
+# for i in d.values():
+#     print(i)
+
+
+# print(d.keys())
+
+# a=d
+# a=d.copy()
+# print(id(a))
+# print(id(d))
+# d['mark']=45
+# print(a)
+# print(d)
+
+# d.pop('place')
+# print(d)
+
+# d.popitem()
+# print(d)
+
+# d.setdefault('mark')
+# print(d)
+
+# l=[10,11,12]
+# print(d.fromkeys(l))
+
+
+
+name=str(input("enter name :"))
+age=int(input("enter age:"))
+place=str(input("enter place :"))
+mark=int(input("enter mark :"))
+
+
+d['name']=name
+d['age']=age
+d['place']=place
+d['mark']=mark
+
+print(d)
