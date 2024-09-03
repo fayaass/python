@@ -791,7 +791,7 @@ else:
 
 #----------------------------------------------------------------------------------
 
-#student details
+#student details using list
 
 # std=[['a',20,50],['b',20,50],['c',20,50],['d',20,50]]
 # while True:
@@ -839,7 +839,7 @@ else:
 
 #------------------------------------------------------------------------------------
 
-#employee details
+#employee details using list
 
 # emp=[['fayas',203,24,'Delhi',75000,'manager',4],['yaseen',204,24,'Delhi',20000,'security',10]]
 # import datetime
@@ -881,7 +881,7 @@ else:
 #                 i[2]=age                                                                      
 #             elif choice==2:
 #                 place=str(input('enter place :'))
-#                 i[3]=place
+#               'name':'book','id':'1','price':'50','stock':'8'  i[3]=place
 #             elif choice==3:
 #                 salary=int(input('enter salary :'))
 #                 i[4]=salary
@@ -921,7 +921,7 @@ else:
 #     name=str(input('enter name :'))
 #     f=0
 #     for i in emp:
-#         if name in i :
+#         if name in i :'name':'book','id':'1','price':'50','stock':'8'
 #             print(i)
 #             f=1
 #     if f==0:
@@ -969,7 +969,7 @@ else:
 # print(t)
 
 
-#find the position of the values
+#find the position of the values using tuple
 
 # t=(1,2,3,4,1,2,3,5,3,6)
 # a=int(input("enter a value :"))
@@ -987,7 +987,7 @@ else:
 #dictionary
 
 
-d={'name':'fayas','age':22,'place':'kottayam'}
+# d={'name':'fayas','age':22,'place':'kottayam'}
 # print(d)
 # print(d['name'])
 # print(d['age'])
@@ -1047,15 +1047,74 @@ d={'name':'fayas','age':22,'place':'kottayam'}
 
 
 
-name=str(input("enter name :"))
-age=int(input("enter age:"))
-place=str(input("enter place :"))
-mark=int(input("enter mark :"))
+# name=str(input("enter name :"))
+# age=int(input("enter age:"))
+# place=str(input("enter place :"))
+# mark=int(input("enter mark :"))
 
 
-d['name']=name
-d['age']=age
-d['place']=place
-d['mark']=mark
+# d['name']=name
+# d['age']=age
+# d['place']=place
+# d['mark']=mark
 
-print(d)
+# print(d)
+
+
+                    #shop details using dictionary
+
+shop=[{'name':'book','id':'1','price':'50','stock':'8'},{'name':'pen','id':'2','price':'10','stock':'20'}]
+while True:
+    print('''
+1.product details
+2.view shop details
+3.update shop details
+4.delete shop details
+5.exit              
+          ''')
+    choice=int(input('enter the choice :'))
+    if choice==1:
+        name=str(input('enter name :'))
+        id=int(input('enter id :'))
+        price=int(input('enter price :'))
+        stock=int(input('enter stock :'))
+        shop.append({'name':name,'id':id,'price':price,'stock':stock})
+    elif choice==2:
+        for i in shop:
+            print(i)
+    elif choice==3:
+        name=str(input('enter name :'))
+        f=0
+        for i in shop:
+            if name == i['name']:
+                print('''
+                1.price update
+                2.stock update
+                      ''')
+                choice=int(input('enter the choice :'))
+                if choice==1:
+                    price=int(input('enter price :'))
+                    i['price']=price
+                elif choice==2:
+                    stock=int(input('enter stock :'))
+                    i['stock']=stock
+            f=1
+            if f==0:
+                print('invalid choice')
+    elif choice==4:
+        name=str(input('enter name :'))
+        f=0
+        for i in shop:
+            if name == i['name']:
+                shop.remove(i)
+                f=1
+            if f==0:
+                print('invalid choice')
+    elif choice==5:
+        break
+    else:
+        ('invalid option')
+            
+
+
+
