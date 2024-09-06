@@ -1306,14 +1306,29 @@ else:
 # print(even)
 # print(odd)
 
+#---------------------------------------------------------------------------------------------------------------------------------------------
+
+# dict={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine'}
+# num=int(input('enter a number :'))
+# s=''
+# while num>0:
+#     d=num%10
+#     s=dict[d]+'  '+s
+#     num//=10
+# print(s)
 
 
-numbers={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine'}
-
-for i in numbers:
-        print(i)
+# l=[{'name':'fayas','age':22,'project':['ems','sms']}]
+# print(l[0]['project'][0])
 
 
+# d={'name':'fayas','age':22}
+# print(d['age'])
 
 
-
+# l=[{'name':'fayas','age':22,'project':['ems','sms']}]
+# a=str(input('enter a word :'))
+# for i in l:
+#     i['project'].append(a)
+#     print(i)
+    
