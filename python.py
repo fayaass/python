@@ -1331,4 +1331,69 @@ else:
 # for i in l:
 #     i['project'].append(a)
 #     print(i)
-    
+
+#set
+
+# s={1,4,5,7,'abc',5.8,1}
+
+# for i in s:
+#     print(i)
+
+# if 7 in s:
+#     print('true')
+# else:
+#     print('false')
+
+# print(s)
+
+
+# l=[1,2,3,5,1,2,3,4]
+# s=set(l)
+# print(s)
+# l=list(s)
+# print(l)
+
+
+# s=set()         #to create an empty set.
+# s.add(13)
+# print(s)
+
+# s={10,11,12}
+# s.pop()
+# print(s)
+
+# s.discard(100)
+# print(s)
+
+# s.remove(10)
+# print(s)
+
+# s.clear()
+# print(s)
+
+
+s={1,2,3,4,5}
+s1={1,2,3,6}
+s2={6,7,8}
+
+# print(s.difference(s1))
+
+# print(s.union(s1))
+
+# print(s.intersection(s1))
+
+# print(s.symmetric_difference(s1))
+
+# print(s.isdisjoint(s2))
+
+# print(s.issubset(s1))
+
+# print(s.issuperset(s1))
+
+# s.update({7,8,9})
+# print(s)
+
+s.difference_update(s1)
+print(s)
+
+
