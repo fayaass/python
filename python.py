@@ -1372,9 +1372,9 @@ else:
 # print(s)
 
 
-s={1,2,3,4,5}
-s1={1,2,3,6}
-s2={6,7,8}
+# s={1,2,3,4,5}
+# s1={1,2,3,6}
+# s2={6,7,8}
 
 # print(s.difference(s1))
 
@@ -1393,7 +1393,55 @@ s2={6,7,8}
 # s.update({7,8,9})
 # print(s)
 
-s.difference_update(s1)
-print(s)
+# s.difference_update(s1)
+# print(s)
+
+# s=set()
+# b=int(input('enter the limit :'))
+# for i in range (b):
+#     name=str(input('enter the name :'))
+#     s.add(name)
+#     print(s)
 
 
+
+# php=set()
+# java=set()
+# python=set()
+# b=int(input('enter the limit :'))
+# for i in range (b):
+#     name=str(input('enter the name :'))
+#     php.add(name)
+#     print(php)
+#     java.add(name)
+#     print(java)
+#     python.add(name)
+#     print(python)
+
+php=set()
+java=set()
+python=set()
+          
+php={'a','b','c'}
+a=int(input('enter the limit :'))
+for i in range (a):
+    name=str(input('enter the name :'))
+    php.add(name)
+    print(php) 
+
+java={'a','c','d','e'}
+b=int(input('enter the limit :'))
+for i in range (b):
+    name=str(input('enter the name :'))
+    java.add(name)
+    print(java)
+
+python={'a','b','d','f','g'}
+c=int(input('enter the limit :'))
+for i in range (c):
+    name=str(input('enter the name :'))
+    python.add(name)
+    print(python)
+              
+    
+  
