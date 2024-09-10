@@ -1073,15 +1073,21 @@ else:
 # 5.exit              
 #           ''')
 #     choice=int(input('enter the choice :'))
+
+
 #     if choice==1:
 #         name=str(input('enter name :'))
 #         id=int(input('enter id :'))
 #         price=int(input('enter price :'))
 #         stock=int(input('enter stock :'))
 #         shop.append({'name':name,'id':id,'price':price,'stock':stock})
+
+
 #     elif choice==2:
 #         for i in shop:
 #             print(i)
+
+
 #     elif choice==3:
 #         name=str(input('enter name :'))
 #         f=0
@@ -1101,6 +1107,8 @@ else:
 #             f=1
 #             if f==0:
 #                 print('invalid choice')
+
+
 #     elif choice==4:
 #         name=str(input('enter name :'))
 #         f=0
@@ -1110,6 +1118,8 @@ else:
 #                 f=1
 #             if f==0:
 #                 print('invalid choice')
+
+
 #     elif choice==5:
 #         break
 #     else:
@@ -1418,30 +1428,74 @@ else:
 #     python.add(name)
 #     print(python)
 
-php=set()
-java=set()
-python=set()
+# php=set()
+# java=set()
+# python=set()
           
-php={'a','b','c'}
-a=int(input('enter the limit :'))
-for i in range (a):
-    name=str(input('enter the name :'))
-    php.add(name)
-    print(php) 
+# php={'a','b','c'}
+# a=int(input('enter the limit :'))
+# for i in range (a):
+#     name=str(input('enter the name :'))
+#     php.add(name)
+#     print(php) 
 
-java={'a','c','d','e'}
-b=int(input('enter the limit :'))
-for i in range (b):
-    name=str(input('enter the name :'))
-    java.add(name)
-    print(java)
+# java={'a','c','d','e'}
+# b=int(input('enter the limit :'))
+# for i in range (b):
+#     name=str(input('enter the name :'))
+#     java.add(name)
+#     print(java)
 
-python={'a','b','d','f','g'}
-c=int(input('enter the limit :'))
-for i in range (c):
-    name=str(input('enter the name :'))
-    python.add(name)
-    print(python)
+# python={'a','b','d','f','g'}
+# c=int(input('enter the limit :'))
+# for i in range (c):
+#     name=str(input('enter the name :'))
+#     python.add(name)
+#     print(python)
               
+
     
-  
+# php={'a','b','c'}
+# java={'a','b','d','e'}
+# python={'a','c','f','g'}
+# s=php.difference(java).difference(python)
+# s1=java.difference(php).difference(python)
+# s2=python.difference(java).difference(php)
+# # print(s)
+# # print(s1)
+# # print(s2)
+# f=s.union(s1).union(s2)
+# print(f)
+
+
+                #function
+
+# def sample():
+#     print('welcome')
+#     print('welcome1')
+#     print('welcome2')
+# sample()
+# a=[1,2,3,4,5]
+# print(a)
+# sample()
+# a=[1,2,3,4,5]
+# print(a)
+# sample()
+
+
+# def sample ():
+#     b=10 #local
+#     print('inside function a=',a)
+#     print('inside function b=',b)
+# a=20     #global
+# sample ()
+# print('outside function a=',a)
+# # print('outside function b=',b)
+
+
+def sample ():
+    a=10 #local
+    print('inside function a=',a)
+a=20     #global
+sample ()
+print('outside function a=',a)
