@@ -1493,9 +1493,95 @@ else:
 # # print('outside function b=',b)
 
 
-def sample ():
-    a=10 #local
-    print('inside function a=',a)
-a=20     #global
-sample ()
-print('outside function a=',a)
+# def sample ():
+#     a=10 #local
+#     print('inside function a=',a)
+# a=20     #global
+# sample ()
+# print('outside function a=',a)
+
+
+# def sample ():
+#     a=10
+#     b=20
+#     return 'welcome',a,b
+# c,a1,b1=sample()
+# print(a1)
+# print(b1)
+# print(c)
+
+
+# def number ():
+#     a=int(input('enter a number :'))
+#     b=int(input('enter a number :'))
+#     return a,b
+
+# while True:
+#     print('''
+# 1.add
+# 2.sub
+# 3.mul
+# 4.div
+# 5.exit
+# ''')
+#     choice=int(input('enter the choice :'))
+#     if choice==1:
+#         a,b=number()
+#         print(a+b)
+#     elif choice==2:
+#         a,b=number()
+#         print(a-b)
+#     elif choice==3:
+#         a,b=number()
+#         print(a*b)
+#     elif choice==4:
+#         a,b=number()
+#         print(a/b)
+#     else:
+#         break
+
+
+# def number ():
+#     a=int(input('enter a number :'))
+#     b=int(input('enter a number :'))
+#     return a,b
+# def add():
+#     a,b=number()
+#     print(a+b)
+# def sub():
+#     a,b=number()
+#     print(a-b)
+# def mul():
+#     a,b=number()
+#     print(a*b)
+# def div():
+#     a,b=number()
+#     print(a/b)
+
+# while True:
+#     print('''
+# 1.add
+# 2.sub
+# 3.mul
+# 4.div
+# 5.exit
+# ''')
+#     choice=int(input('enter the choice :'))
+#     if choice==1:
+#         add()
+#     elif choice==2:
+#         sub()
+#     elif choice==3:
+#         mul()
+#     elif choice==4:
+#         div()
+#     else:
+#         break
+
+
+
+def sample (a,b):
+    print(a,b)
+sample (10,20)
+sample('asd',20)
+sample(['asd',20,21]20,20)
