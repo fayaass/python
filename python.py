@@ -1580,8 +1580,76 @@ else:
 
 
 
-def sample (a,b):
-    print(a,b)
-sample (10,20)
-sample('asd',20)
-sample(['asd',20,21]20,20)
+# def sample (a,b):
+#     print(a,b)
+# sample (10,20)
+# sample('asd',20)
+# sample(['asd',20,21]20,20)
+
+
+# def sample(name='abc',age=20):
+#     print(name,age)
+
+#sample()
+# sample('fayas',22)
+# sample('fayas')
+# sample(22)
+
+
+# def sample(*a):
+#     print(a)
+
+# sample()
+# sample('hello','welcome',12,3,4,5.3)
+
+
+# def sample(**a):
+#     print(a)
+    
+# sample()
+# sample(name='fayas',age=22)
+
+emp[]
+def login():
+    uname=input('enter uname')
+    passw=input('enter passw')
+    f=0:
+    if uname='admin' and passw='admin':
+        f=1
+    return f
+
+def add_emp():
+    id=int(input('enter the id :'))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            add_emp()
+    if f1==0:
+        
+
+
+
+
+while True:
+    print('''
+1.login
+2.exit
+''')
+    ch=int(input('enter the choice :'))
+    if ch==1:
+        f=login()
+        if f==1:
+            while True:
+                print('''
+                1.add emp
+                2.view
+                3.update
+                4.delete
+                5.logout
+                ''')
+                sub_ch=int(input('enter the choice :'))
+                if sub_ch==1:
+                    add_emp():
+        else:
+            print('invalid uname and passw')
