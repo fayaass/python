@@ -1609,13 +1609,18 @@ else:
 # sample()
 # sample(name='fayas',age=22)
 
-emp[]
+emp=[]
 def login():
     uname=input('enter uname')
     passw=input('enter passw')
-    f=0:
-    if uname='admin' and passw='admin':
+    f=0
+    if uname == 'admin' and passw == 'admin':
         f=1
+    for i in emp:
+        if uname.isdigit():
+            uname=int(uname)
+            if uname==i['id'] and passw==i['dob']:
+                f=2
     return f
 
 def add_emp():
@@ -1626,6 +1631,42 @@ def add_emp():
             f1=1
             add_emp()
     if f1==0:
+        name=str(input('enter the name :'))
+        salary=int(input('enter the salary'))
+        dob=str(input('enter dob :'))
+        pos=str(input('enter the pos :'))
+        emp.append({'id':id,'name':name,'salary':salary,'dob':dob,'pos':pos,})
+
+
+def view_emp():
+    print(emp)
+
+def update_emp():
+    id=int(input('enter id :'))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            salary=int(input('enter salary :'))
+            pos=str(input('enter position :'))
+            i['salary']=salary
+            i['pos']=pos
+
+    if f1==0:
+        print('invalid id')
+
+def delete_emp():
+    id=int(input('enter id :'))
+    f1=0
+    for i in emp:
+        if i['id']==id:
+            f1=1
+            emp.remove(i)
+
+    if f1==0:
+        print('invalid id')
+    
+
         
 
 
@@ -1635,7 +1676,7 @@ while True:
     print('''
 1.login
 2.exit
-''')
+    ''')
     ch=int(input('enter the choice :'))
     if ch==1:
         f=login()
@@ -1650,6 +1691,28 @@ while True:
                 ''')
                 sub_ch=int(input('enter the choice :'))
                 if sub_ch==1:
-                    add_emp():
+                    add_emp()
+
+                elif sub_ch==2:
+                    view_emp()
+
+                elif sub_ch==3:
+                    update_emp()
+
+                elif sub_ch==4:
+                    delete_emp()
+
+                elif sub_ch==5:
+                    break
+
+        elif f==2:
+            print('user login')
+
+
         else:
             print('invalid uname and passw')
+
+    elif ch==2:
+        break
+    else:
+        print('invalid choice')     
