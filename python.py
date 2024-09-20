@@ -1761,15 +1761,100 @@ else:
 
 user=[]
 lib=[]
-def register():
 
+def register():
+    if len(user)==0:
+        id=101
+    else:
+        id=user[-1]['id']+1
+    print(id)
+    email=str(input('enter email :'))
+    f1=0
+    for i in user:
+            if i['email']==email:
+                f1=1
+                register()
+    if f1==0:
             name=str(input('enter the name :'))
-            id=int(input('enter the id :'))
-            email=str(input('enter the email :'))
             username=email
             phone=int(input('enter phone no :'))
             password=input('enter the password :')
-            user.append('name':name,'id':id,'email':email,'phone':phone,'password':password)
+            user.append({'name':name,'id':id,'email':email,'phone':phone,'password':password})
+
+
+def login():
+    uname=input('enter uname')
+    passw=input('enter passw')
+    f=0
+    if uname=='admin' and passw=='admin':
+        f=1
+    log=''
+    for i in user:
+        if uname==i['email'] and passw==i['password']:
+            f=2
+            log=i
+    return f,user   
+
+
+def add_book():
+    if len(lib)==0:
+        id=201
+    else:
+        id=user[-1]['id']+1
+    f1=0
+    for i in lib:
+        if i['id']==id:
+            f1=1
+            add_book()
+    if f1==0:
+        name=str(input('enter the name :'))
+        price=int(input('enter the price :'))
+        stock=int(input('enter the stock'))
+        lib.append({'name':name,'price':price,'stock':stock})
+
+
+def view_book():
+    print(lib)
+
+
+def update_book():
+    id=int(input('enter id :'))                                                         
+    f1=0
+    for i in lib:
+        if i['id']==id:
+            f1=1
+            price=int(input('enter price :'))                                   
+            stock=str(input('enter stock :'))
+            i['price']=price
+            i['stock']=stock
+    if f1==0:
+        print('invalid id')
+
+
+
+def delete():
+    id=int(input('enter id :'))
+    f1=0
+    for i in lib:
+        if i['id']==id:
+            f1=1
+            lib.remove(i)
+
+    if f1==0:
+        print('invalid id')
+
+
+def view_user():
+    print(user)
+
+
+
+
+
+        
+
+
+
 
 
 while True:
@@ -1782,6 +1867,35 @@ while True:
     if choice==1:
         register()
     elif choice==2:
+        f,user=login()
+        if f==1:
+            while True:
+                print('''
+                1.add book
+                2.view book
+                3.update book
+                4.delete
+                5.view user
+                ''')
+                sub_ch=int(input('enter the choice'))
+                if sub_ch==1:
+                    add_book()
+                elif sub_ch==2:
+                    view_book()
+                elif sub_ch==3:
+                    update_book()
+                elif sub_ch==4:
+                    delete()
+                elif sub_ch==5:
+                    view_user()
+
+
+        elif f==2:
+            print('user login')
+        elif f==0:
+            print('invalid uname or passw')
+    elif choice==3:
         break
     else:
         print('invalid')
+ 
