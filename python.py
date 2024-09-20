@@ -1800,7 +1800,7 @@ def add_book():
     if len(lib)==0:
         id=201
     else:
-        id=user[-1]['id']+1
+        id=lib[-1]['id']+1
     f1=0
     for i in lib:
         if i['id']==id:
@@ -1810,7 +1810,7 @@ def add_book():
         name=str(input('enter the name :'))
         price=int(input('enter the price :'))
         stock=int(input('enter the stock'))
-        lib.append({'name':name,'price':price,'stock':stock})
+        lib.append({'name':name,'id':id,'price':price,'stock':stock})
 
 
 def view_book():
