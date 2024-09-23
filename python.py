@@ -1759,15 +1759,15 @@ else:
 
 
 
-user=[]
-lib=[]
+user=[{'name': 'aaa', 'id': 101, 'email': 'a@', 'books': [201,202], 'phone': 123, 'password': 'asd'}]
+lib=[{'name':'balarama','id':201,'price':25,'stock':10},{'name':'balarama','id':202,'price':25,'stock':10}]
 
 def register():
     if len(user)==0:
         id=101
     else:
         id=user[-1]['id']+1
-    print(id)
+    
     email=str(input('enter email :'))
     f1=0
     for i in user:
@@ -1779,7 +1779,7 @@ def register():
             username=email
             phone=int(input('enter phone no :'))
             password=input('enter the password :')
-            user.append({'name':name,'id':id,'email':email,'phone':phone,'password':password})
+            user.append({'name':name,'id':id,'email':email,'books':[],'phone':phone,'password':password})
 
 
 def login():
@@ -1793,7 +1793,7 @@ def login():
         if uname==i['email'] and passw==i['password']:
             f=2
             log=i
-    return f,user   
+    return f,log   
 
 
 def add_book():
@@ -1814,7 +1814,8 @@ def add_book():
 
 
 def view_book():
-    print(lib)
+    for i in lib:
+        print(i)
 
 
 def update_book():
@@ -1845,13 +1846,52 @@ def delete():
 
 
 def view_user():
-    print(user)
+    for i in  user:
+        print('name',i['name'])
+        print('id',i['id'])
+        print('email',i['email'])
+        print('phone',i['phone'])
 
 
 
 
+def view_profile(log):
+    print(log)
 
-        
+
+def update_profile(log):
+
+    name=str(input('enter name :'))
+    phone=int(input('enter phone :'))
+    log['name']=name
+    log['phone']=phone
+  
+
+
+def lend_book(log):
+    id=int(input('enter id :'))
+    f=0
+    for i in lib:
+        if i['id']==id:
+            f=1
+            i['stock']-=1
+            log['books'].append(id)
+            print('book added')
+    if f==0:
+        print('invalid id')
+
+
+def return_book(log):
+    id=int(input('enter id :'))
+    f=0
+    for i in lib:
+        if i['id']==id and id in log['books']:
+            f=1
+            i['stock']+=1
+            log['books'].remove(id)
+            print('book returned')
+    if f==0:
+        print('invalid id')
 
 
 
@@ -1867,7 +1907,8 @@ while True:
     if choice==1:
         register()
     elif choice==2:
-        f,user=login()
+        f,log=login()
+
         if f==1:
             while True:
                 print('''
@@ -1876,8 +1917,9 @@ while True:
                 3.update book
                 4.delete
                 5.view user
+                6.exit
                 ''')
-                sub_ch=int(input('enter the choice'))
+                sub_ch=int(input('enter the choice :'))
                 if sub_ch==1:
                     add_book()
                 elif sub_ch==2:
@@ -1888,14 +1930,42 @@ while True:
                     delete()
                 elif sub_ch==5:
                     view_user()
-
+                elif sub_ch==6:
+                    break
 
         elif f==2:
-            print('user login')
+            while True:
+                print('''
+                1.view profile
+                2.view book
+                3.update profile
+                4.lend book
+                5.return book
+                6.exit
+                ''')
+                sub_ch=int(input('enter the choice :'))
+                if sub_ch==1:
+                    view_profile(log)
+                elif sub_ch==2:
+                    view_book()
+                elif sub_ch==3:
+                    update_profile(log)
+                elif sub_ch==4:
+                    lend_book(log)
+                elif sub_ch==5:
+                    return_book(log)
+                elif sub_ch==6:
+                    break
+
+
         elif f==0:
             print('invalid uname or passw')
     elif choice==3:
         break
     else:
         print('invalid')
+ 
+
+
+
  
