@@ -1895,6 +1895,11 @@ def return_book(log):
 
 
 
+def book_in_hand(log):
+    print(log['books'])
+
+
+
 
 
 while True:
@@ -1941,7 +1946,8 @@ while True:
                 3.update profile
                 4.lend book
                 5.return book
-                6.exit
+                6.book in hand
+                7.exit
                 ''')
                 sub_ch=int(input('enter the choice :'))
                 if sub_ch==1:
@@ -1955,6 +1961,8 @@ while True:
                 elif sub_ch==5:
                     return_book(log)
                 elif sub_ch==6:
+                    book_in_hand(log)
+                elif sub_ch==7:
                     break
 
 
@@ -1969,3 +1977,19 @@ while True:
 
 
  
+
+
+ # data=lambda a,b: a+b
+# print(data(10,5))
+
+# l=[1,2,3,4,5,6,7,8]
+# print(list(filter(lambda x:x%2!=0,l)))
+
+# def num(x):
+#     return x%2==0
+# print(list(filter(num,l)))
+
+
+
+l=['hello','welcome','apple','kiwi']
+print(list(filter(lambda x:'e' in x,l)))
