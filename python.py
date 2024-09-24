@@ -2005,8 +2005,8 @@ else:
 # print(list(map(num,l)))
 
 
-def sample():
-    print('hello')
-sample()
+# def sample():
+#     print('hello')
+# sample()
 
-a=10
+# a=10
