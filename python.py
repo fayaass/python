@@ -2010,3 +2010,54 @@ else:
 # sample()
 
 # a=10
+
+
+                                            #FILE HANDLING
+
+
+            #modes
+
+#x-create
+#r-read
+#w-write
+#a-append
+
+
+# f=open('dem.txt','x')
+# f.write('welcome')
+# f.write('hellooo')
+# f.write('123')
+
+# f=open('dem.txt','r')
+# a=f.read()
+# print(a)
+# f.seek(0)
+# b=f.read(3)
+# print(b)
+
+# f=open('demo1.txt','r')
+# a=f.readline()
+# print(a)
+# b=f.readline()
+# print(b)
+# c=f.readline()
+# print(c)
+# a=f.readline(2)
+# print(a)
+
+# f=open('demo1.txt','r')
+# a=f.readlines()
+# print(a)
+# print(len(a))
+# print(f.tell())
+
+f=open('demo1.txt','r')
+a=f.readlines()
+l=len(a)
+f.seek(0)
+for i in range(l):
+    b=f.readline().strip()
+    print(b[::-1])
+
+
+
