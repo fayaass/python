@@ -2051,13 +2051,47 @@ else:
 # print(len(a))
 # print(f.tell())
 
+#reverese
+
+# f=open('demo1.txt','r')
+# a=f.readlines()
+# l=len(a)
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     print(b[::-1])
+
+# print number of letters and print how many capital and small letters
+
+# f=open('demo1.txt','r')
+# a=f.readlines()
+# l=len(a)
+# cap=0
+# letter=0
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     for i in b:
+#         if i !=' ':
+#             letter+=1
+#             if i.isupper():
+#                 cap+=1
+# print(letter)
+# print('cap',cap)
+# print('small',letter-cap)
+
+# print number of words
+
 f=open('demo1.txt','r')
 a=f.readlines()
 l=len(a)
+w=0
 f.seek(0)
 for i in range(l):
     b=f.readline().strip()
-    print(b[::-1])
-
-
+    a=b.split(' ')
+    for j in  a:
+        if j!=' ':
+            w+=1
+print(w)
 
