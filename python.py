@@ -2082,16 +2082,32 @@ else:
 
 # print number of words
 
-f=open('demo1.txt','r')
-a=f.readlines()
-l=len(a)
-w=0
-f.seek(0)
-for i in range(l):
-    b=f.readline().strip()
-    a=b.split(' ')
-    for j in  a:
-        if j!=' ':
-            w+=1
-print(w)
+# f=open('demo1.txt','r')
+# a=f.readlines()
+# l=len(a)
+# w=0
+# f.seek(0)
+# for i in range(l):
+#     b=f.readline().strip()
+#     a=b.split(' ')
+#     for j in  a:
+#         if j!=' ':
+#             w+=1
+# print(w)
 
+
+# write
+
+# f=open('demo1.txt','w')
+# f.write('welcome')
+# f.write('123')
+# f.write('hello'+'hai')
+
+# f=open('file.txt','w')
+# f.write('welcome')
+# f.write('123')
+# f.write('hello'+'hai')
+
+a=int(input('enter a number :'))
+for i in range(1,11):                           
+    print(i,"*",a,"=",a*i)
