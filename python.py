@@ -2108,6 +2108,49 @@ else:
 # f.write('123')
 # f.write('hello'+'hai')
 
-a=int(input('enter a number :'))
-for i in range(1,11):                           
-    print(i,"*",a,"=",a*i)
+# a=int(input('enter a number :'))
+# for i in range(1,11):                           
+#     print(i,"*",a,"=",a*i)
+
+# multiplication using write ~
+
+
+
+# class syn:
+#     def python():
+#         print('python')
+#     def java():
+#         print('java')    
+#     def php():
+#         print('php')
+# manu=syn
+# manu.pyhon()
+# akhil=syn
+# akhil.php()
+
+class bank:
+    def __init__(s):
+        s.name=input('name')
+        s.age=int(input('age'))
+        s.bal=0
+
+
+        def deposit(self,amt):
+            self.bal+=amt
+            print('deposit')
+        def withdrow(self,amt):
+            self.bal-=amt
+            print('withdrow')
+        def balance(self):
+            print('balance',self.bal)
+
+obj=bank()
+obj.deposit(5000)
+obj.balance()
+obj.withdrow(2000)
+obj.balance()
+print(obj.bal)
+
+obj1=bank()
+obj1.deposit(1000)
+obj1.balance()
