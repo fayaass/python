@@ -1855,6 +1855,11 @@ else:
 
 
 
+
+
+
+
+
 # def view_profile(log):
 #     print(log)
 
@@ -2128,29 +2133,100 @@ else:
 # akhil=syn
 # akhil.php()
 
-class bank:
-    def __init__(s):
-        s.name=input('name')
-        s.age=int(input('age'))
-        s.bal=0
 
 
-        def deposit(self,amt):
-            self.bal+=amt
-            print('deposit')
-        def withdrow(self,amt):
-            self.bal-=amt
-            print('withdrow')
-        def balance(self):
-            print('balance',self.bal)
+# class bank:
+#     def __init__(s):
+#         s.name=input('name')
+#         s.age=int(input('age'))
+#         s.bal=0
 
-obj=bank()
-obj.deposit(5000)
-obj.balance()
-obj.withdrow(2000)
-obj.balance()
-print(obj.bal)
 
-obj1=bank()
-obj1.deposit(1000)
-obj1.balance()
+#         def deposit(self,amt):
+#             self.bal+=amt
+#             print('deposit')
+#         def withdrow(self,amt):
+#             self.bal-=amt
+#             print('withdrow')
+#         def balance(self):
+#             print('balance',self.bal)
+
+# obj=bank()
+# obj.deposit(5000)
+# obj.balance()
+# obj.withdrow(2000)
+# obj.balance()
+# print(obj.bal)
+
+# obj1=bank()
+# obj1.deposit(1000)
+# obj1.balance()
+
+                    #inheritance
+
+#single inheritance
+
+# class syn:
+#     def python(self):
+    #self a=10
+#         print('python')
+#     def php(self):
+#         print('php')
+
+# class novavi(syn):
+#     def dm(self):
+#         print('dm works')
+#     def web(self):
+#         print('web dev')
+    
+# novavi_staff=novavi()
+# novavi_staff.dm()
+# novavi_staff.python()
+
+# std1=syn()
+# std1.python()
+
+# multiple inheritance
+
+# class school:
+#     def maths(self):
+#         print('maths')
+#     def science(self):
+#         print('science')
+
+# class tuition:
+#     def physics(self):
+#         print('physics')
+#     def chemistry(self):
+#         print('chemistry')
+
+# class std(school,tuition):
+#     def football(self):
+#         print('football')
+
+# fayas=std()
+# fayas.science()
+# fayas.chemistry()
+
+
+# multilevel inheritance
+
+class calicut_university:
+    def exams(self):
+        print('exams')
+    def results(self):
+        print('results')
+
+class college(calicut_university):
+    def notes(self):
+        print('notes')
+    def uniform(self):
+        print('uniform')
+
+class std(college):
+    def uniform(self):
+        print('uniform')
+
+fayas=std()
+fayas.notes()
+    
