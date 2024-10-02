@@ -2211,22 +2211,111 @@ else:
 
 # multilevel inheritance
 
-class calicut_university:
-    def exams(self):
-        print('exams')
-    def results(self):
-        print('results')
+# class calicut_university:
+#     def exams(self):
+#         print('exams')
+#     def results(self):
+#         print('results')
 
-class college(calicut_university):
-    def notes(self):
-        print('notes')
-    def uniform(self):
-        print('uniform')
+# class college(calicut_university):
+#     def notes(self):
+#         print('notes')
+#     def uniform(self):
+#         print('uniform')
 
-class std(college):
-    def uniform(self):
-        print('uniform')
+# class std(college):
+#     def uniform(self):
+#         print('uniform')
 
-fayas=std()
-fayas.notes()
+# fayas=std()
+# fayas.notes()
+# fayas.exams()
+
+# heirarchial inheritance
+
+#one parent and one or more students
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+
+# class nonteaching_staff(syn):
+#     def admission(self):
+#         print('admission')
+
+# class teaching_staff(syn):
+#     def python_prg(self):
+#         print('python_prg')
+
+# staff1=nonteaching_staff()
+# staff2=teaching_staff()
+# staff1.python()
+# staff1.admission()
+# staff2.php()
+# staff2.python_prg()
+
+#hybrid inheritance
+
+# class syn:
+#     def python(self):
+#         print('python')
+#     def php(self):
+#         print('php')
+
+# class nonteaching_staff(syn):
+#     def admission(self):
+#         print('admission')
+
+# class teaching_staff(syn):
+#     def python_prg(self):
+#         print('python_prg')
+
+# class std(teaching_staff):
+#     def notes(self):
+#         print('notes')
+
+# staff1=nonteaching_staff()
+# staff2=teaching_staff()
+# staff3=std()
+# staff1.python()
+# staff1.admission()
+# staff2.php()
+# staff2.python_prg()
+# staff3.python()
+
+class showroom:
+    def hayabusa(self):
+        print('hayabusa')
+    def bmw(self):
+        print('bmw')
+    def porche(self):
+        print('porche')
+
+class bikes(showroom):
+    def bike(self):
+        print('bike')
+
+class cars(showroom):
+    def car(self):
+        print('car')
+
+class sport_cars(cars):
+    def sport_car(self):
+        print('sport_car')
+
+s=showroom()
+a=bikes()
+b=cars()
+c=sport_cars()
+a.hayabusa()
+b.bmw()
+c.porche()
+
+
+    
+
+
+
     
