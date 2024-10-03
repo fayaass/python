@@ -2285,36 +2285,100 @@ else:
 # staff2.python_prg()
 # staff3.python()
 
-class showroom:
-    def hayabusa(self):
-        print('hayabusa')
-    def bmw(self):
-        print('bmw')
-    def porche(self):
-        print('porche')
-
-class bikes(showroom):
-    def bike(self):
-        print('bike')
-
-class cars(showroom):
-    def car(self):
-        print('car')
-
-class sport_cars(cars):
-    def sport_car(self):
-        print('sport_car')
-
-s=showroom()
-a=bikes()
-b=cars()
-c=sport_cars()
-a.hayabusa()
-b.bmw()
-c.porche()
 
 
+# class showroom:
+#     def hayabusa(self):
+#         print('hayabusa')
+#     def bmw(self):
+#         print('bmw')
+#     def porche(self):
+#         print('porche')
+
+# class bikes(showroom):
+#     def bike(self):
+#         print('bike')
+
+# class cars(showroom):
+#     def car(self):
+#         print('car')
+
+# class sport_cars(cars):
+#     def sport_car(self):
+#         print('sport_car')
+
+# s=showroom()
+# a=bikes()
+# b=cars()
+# c=sport_cars()
+# a.hayabusa()
+# b.bmw()
+# c.porche()
+
+
+#polymorphism
+
+# class ed():
+#      def notes(self):
+#          print('notes in ed')
+
+
+# class school:
+#     def notes(self):
+#         print('notes in school')
+# class std(school):
+#     def notes(self):
+#         print('notes in std')
+#          super().notes(sub)
+
+
+# manu=std()
+# manu.notes()
+
+
+# a=10
+# a=20
+# print(a)
+
+
+
+# class bank():
+#     def __init__(self):
+#         print('add bank dtls')
+
+# class user():
+#     def __init__(self):
+#         print('add user dtls')
+
+# sbi=bank()
+# fayas=user()
+
+
+
+from abc import ABC,abstractmethod
+class syn(ABC):
+    @abstractmethod
+    def reg(self):
+        pass
+
+    def py(self):
+        print('py')
+
+class std(syn):
+    def reg(self):
+        name=input('name')
+    def notes(self):
+        print('notes')
+
+class staff(syn):
+    def regi(self):
+        print('staff reg')
+
+# amal=std()
+# amal.reg()
     
+staff1=staff()
+staff.regi()
 
 
 
