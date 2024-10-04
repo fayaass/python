@@ -2355,31 +2355,81 @@ else:
 
 
 
-from abc import ABC,abstractmethod
-class syn(ABC):
-    @abstractmethod
-    def reg(self):
-        pass
+# from abc import ABC,abstractmethod
+# class syn(ABC):
+#     @abstractmethod
+#     def reg(self):
+#         pass
 
-    def py(self):
-        print('py')
+#     def py(self):
+#         print('py')
 
-class std(syn):
-    def reg(self):
-        name=input('name')
-    def notes(self):
-        print('notes')
+# class std(syn):
+#     def reg(self):
+#         name=input('name')
+#     def notes(self):
+#         print('notes')
 
-class staff(syn):
-    def regi(self):
-        print('staff reg')
+# class staff(syn):
+#     def regi(self):
+#         print('staff reg')
 
-# amal=std()
-# amal.reg()
+# # amal=std()
+# # amal.reg()
     
-staff1=staff()
-staff.regi()
+# staff1=staff()
+# staff.regi()
 
 
 
-    
+import re
+
+# a='welcome to all'
+
+# print(re.sub('to','TO',a))
+# print(re.sub('too','TO',a))
+# print(re.split(' ',a))
+# print(re.findall('to',a))
+# print(re.findall('toO',a))
+
+# a='welcome to all to to to'
+# print(re.findall('to',a))
+
+# a='weltocome to all to to to'
+# print(re.findall('to',a))
+# print(re.search('to',a))
+
+# a='abcd'
+# print(re.search('a',a))
+# print(re.search('a.',a))
+# print(re.search('d.',a))
+# print(re.search('d.*',a))
+# print(re.search('a.*',a))
+# print(re.search('a.+',a))
+# print(re.search('d.+',a))
+# print(re.search('c.+',a))
+# print(re.search('c.?',a))
+# print(re.search('d.?',a))
+# print(re.search('a.?',a))
+# print(a)
+# print(re.search('[a-z]',a))
+# print(a='ADSF')
+# print(re.search('[a-z]',a))
+# print(re.search('[A-Z]',a))
+# print(re.search('[A-I]',a))
+# print(re.search('[M-Z]',a))
+# print(a='994637')
+# print(re.search('[0-9]',a))
+# print(re.search('[6-9]',a))
+# print(a='abc123')
+# print(re.search('[a-z][0-9]',a))
+# print(a='abc')
+# print(re.search('[a-z][0-9]',a))
+# print(re.search('[a-z0-9]',a))
+# print(a='2345')
+# print(re.search('[a-z][0-9]',a))
+# print(a='abcd')
+# print(re.search('[a-z].',a))
+# print(re.search('[a-z].*',a))
+# print(re.search('[a-z].+',a))
+# print(re.search('[a-z].?',a))
