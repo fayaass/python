@@ -2382,7 +2382,7 @@ else:
 
 
 
-import re
+# import re
 
 # a='welcome to all'
 
@@ -2433,3 +2433,45 @@ import re
 # print(re.search('[a-z].*',a))
 # print(re.search('[a-z].+',a))
 # print(re.search('[a-z].?',a))
+
+# a='abcd'
+# print(re.search('[a-z].*[0-9]',a))
+
+# a='abcd9'
+# print(re.search('[a-z].*[0-9]',a))
+
+# a='abcd789'
+# print(re.search('[a-z].*[0-9]',a))
+# print(re.search('[a-z].{3}',a))
+
+# a='abcd'
+# print(re.search('[a-z].{4},a))
+# print(re.search('[a-z].{3}',a))
+
+#phone number validation
+
+# import re
+# a='9876543210'
+# if len(a)==10 and re.search('[6-9].{9}',a) and a.isdigit():
+#     print('valid')
+# else:
+#     print('not')
+
+#email  validation
+
+# import re
+# a='fayas123@gmail.com'
+# if re.search('^[a-z].*com$',a):
+#     print('valid')
+# else:
+#     print('not')
+
+# password validation
+
+import re
+a='fayas123'
+if re.search('^[A-z0-9].*[@#$&0-9]',a) and not(a.isdigit()) and len(a)>=8:
+    print('valid')
+else:
+    print('not')
+
