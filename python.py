@@ -2468,11 +2468,32 @@ else:
 
 # password validation
 
-import re
-a='fayas123'
-if re.search('^[A-z0-9].*[@#$&0-9]',a) and not(a.isdigit()) and len(a)>=8:
-    print('valid')
-else:
-    print('not')
+# import re
+# a='fayas123'
+# if re.search('^[A-z0-9].*[@#$&0-9]',a) and not(a.isdigit()) and len(a)>=8:
+#     print('valid')
+# else:
+#     print('not')
 
-fayas
+
+
+                #DataBase Management System(DBMS)
+            
+import sqlite3
+
+con = sqlite3.connect("batch7.db")
+try:
+    con.execute("create table std(roll_no int,name text,age int)")
+except:
+    pass
+
+
+# con.execute("insert into std(roll_no,name,age)values(2,'fayas',22),(3,'althaf',18),(4,'shahid',19)")
+# con.commit()
+
+roll=int(input('enter roll no :'))
+name=input('enter name :')
+age=int(input('enter age'))
+
+con.execute("insert into std(roll_no,name,age)values(?,?,?)",(roll,name,age))
+con.commit()
