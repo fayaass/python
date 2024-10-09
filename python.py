@@ -2475,3 +2475,4 @@ if re.search('^[A-z0-9].*[@#$&0-9]',a) and not(a.isdigit()) and len(a)>=8:
 else:
     print('not')
 
+fayas
