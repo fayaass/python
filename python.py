@@ -2491,9 +2491,83 @@ except:
 # con.execute("insert into std(roll_no,name,age)values(2,'fayas',22),(3,'althaf',18),(4,'shahid',19)")
 # con.commit()
 
-roll=int(input('enter roll no :'))
-name=input('enter name :')
-age=int(input('enter age'))
 
-con.execute("insert into std(roll_no,name,age)values(?,?,?)",(roll,name,age))
-con.commit()
+
+
+# roll=int(input('enter roll no :'))
+# name=input('enter name :')
+# age=int(input('enter age'))
+
+# con.execute("insert into std(roll_no,name,age)values(?,?,?)",(roll,name,age))
+# con.commit()
+
+
+
+
+
+# a=int(input('no of students'))
+# for i in range(a):
+#     roll_no=i+1
+#     name=input('enter name :')
+#     age=int(input('enter age'))
+
+#     con.execute("insert into std(roll_no,name,age)values(?,?,?)",(roll_no,name,age))
+#     con.commit()
+
+
+
+
+# data=con.execute("select name,age from std")
+##print(data)
+# for i in data:
+#     print(i)
+
+
+
+
+# data=con.execute("select * from std where roll_no=2")
+# #print(data)
+# for i in data:
+#     print(i)
+
+
+
+# roll_no=int(input('enter roll no'))
+# data=con.execute("select * from std where roll_no=? ",(roll_no,))
+# #print(data)
+# for i in data:
+#     print(i)
+
+
+
+
+# con.execute("update std set name='muhammed fayas',age=20 where name='fayas'")
+# con.commit()
+# name=input("enter old name")
+# name1=input("enter new name")
+
+# con.execute("update std set name=? where name=? ",(name1,name))
+# con.commit()
+
+
+
+
+# roll_no=int(input("enter roll no"))
+# con.execute("delete from std where roll_no=? ",(roll_no,))
+# con.commit()
+
+
+# data=con.execute("select * from std where name like 'a%' ")
+# #print(data)
+# for i in data:
+#     print(i)
+
+
+
+# data=con.execute("select * from std order by name desc ")
+# #print (data)
+# for i in data:
+#     print(i)
+
+
+
