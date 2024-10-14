@@ -2570,4 +2570,20 @@ except:
 #     print(i)
 
 
+try:
+    con.execute("create table mark(roll_no int,sub text,mark int)")
+except:
+    pass
 
+
+# con.execute("insert into mark(roll_no,sub,mark)values(2,'py',67),(3,'php',43),(4,'java',87)")
+# con.commit()
+
+
+# data=con.execute("select std.roll_no,std.name,std.age,mark.sub,mark.mark from std cross join mark")
+# for i in data:
+#     print(i)
+
+data=con.execute("select name,sum(age) from std group by name")
+for i in data:
+    print(i)
