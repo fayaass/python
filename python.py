@@ -2590,3 +2590,28 @@ except:
 
 
 
+#alphabet
+
+# y=4
+# for i in range(1, 4):
+#     a = 65
+#     for j in range(1,y):
+#         print(chr(a), end=" ")
+#         a += 1
+#     y -= 1
+#     print(" ")
+
+#number 1
+
+# y=4
+# for i in range(1, 4):
+#     a = 1
+#     for j in range(1,y):
+#         print(a, end=" ")
+#         a += 1
+#     y -= 1
+#     print(" ")
+
+#number 2
+
+
